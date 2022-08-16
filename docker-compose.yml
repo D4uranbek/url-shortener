@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+  jdk:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: url_shortener
+    restart: 'always'
+    image: 'asakabank/url_shortener:latest'
+    volumes:
+      - './:/home/jdk/app'
+    ports:
+      - '9090:9090'
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
