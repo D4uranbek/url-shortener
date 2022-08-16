@@ -10,7 +10,7 @@
     </parent>
     <groupId>uz.d4uranbek</groupId>
     <artifactId>url_shortener_d4uranbek</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>url_shortener_d4uranbek</name>
     <description>url_shortener_d4uranbek</description>
     <properties>
