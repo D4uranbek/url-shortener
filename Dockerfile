@@ -7,6 +7,6 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:17-slim
 RUN mkdir /project
-COPY --from=build /app/target/informix-0.0.1.jar /project
+COPY --from=build /app/target/url_shortener_d4uranbek-0.0.1.jar /project
 WORKDIR /project
-ENTRYPOINT ["java","-jar","url_shortener-0.0.1.jar"]
+ENTRYPOINT ["java","-jar","url_shortener_d4uranbek-0.0.1.jar"]
