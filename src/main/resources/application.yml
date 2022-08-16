@@ -1,12 +1,12 @@
 spring:
   datasource:
-    username: postgres
-    password: 1111
-    url: jdbc:postgresql://localhost:5432/url_shortener
+    username: doadmin
+    password: AVNS_8xkZFh1g0d9PbslJzPf
+    url: jdbc:postgresql://db-postgresql-ams3-72898-do-user-11953595-0.b.db.ondigitalocean.com:25060/url_shortener
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: none
     show-sql: true
     properties:
       hibernate:
